@@ -1,6 +1,12 @@
 export class BowlingGame
 {
-    public GetScore(score: number) : string {
-        return score.toString() + ' ';
+    private rolls: number[] = [];
+
+    roll(pins: number): void {
+        this.rolls.push(pins);
+    }
+
+    score(): number {
+        return 0;
     }
 }
